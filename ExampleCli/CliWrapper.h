@@ -1,5 +1,3 @@
-// ExampleClr.h
-
 #pragma once
 #include <msclr\marshal_cppstd.h>
 
@@ -9,14 +7,14 @@ namespace native_classes {
 	class NativeClass;
 }
 
-// A CLR file
-namespace ExampleClr {
+// A CLI file
+namespace ExampleCli {
 
-	public ref class ClrWrapper {
+	public ref class CliWrapper {
 	public :
-		ClrWrapper();
-		~ClrWrapper(); // Disposer
-		!ClrWrapper(); // Finalizer
+		CliWrapper();
+		~CliWrapper(); // Disposer
+		!CliWrapper(); // Finalizer
 
 		int NativeCount();
 

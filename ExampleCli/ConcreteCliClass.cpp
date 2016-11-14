@@ -2,36 +2,36 @@
 
 #include "stdafx.h"
 
-#include "ConcreteClrClass.h"
+#include "ConcreteCliClass.h"
 #include "NativeClass.h"
 
 
-namespace ExampleClr {
+namespace ExampleCli {
 
-	String^ ConcreteClrClass::ReturningStrings() {
+	String^ ConcreteCliClass::ReturningStrings() {
 		return gcnew String(
 "I return a string as a CLR reference type. gcnew is used create me as a \
 reference type that can be managed and garbage collected");
 	}
 
-	String^ ConcreteClrClass::ReturningStringFromNativeCode() {
+	String^ ConcreteCliClass::ReturningStringFromNativeCode() {
 		native_classes::NativeClass nativeClass;
 
 		return gcnew String(nativeClass.ReturnStringFromNativeCode().c_str()) 
 			+ gcnew String(". We can initialize String^ with char*");
 	}
 
-	int ConcreteClrClass::ReturnValueTypeFromClr() {
+	int ConcreteCliClass::ReturnValueTypeFromClr() {
 		return 876552;
 	}
 
-	int ConcreteClrClass::ReturnValueTypeFromNative() {
+	int ConcreteCliClass::ReturnValueTypeFromNative() {
 		native_classes::NativeClass nativeClass;
 
 		return nativeClass.ReturnInt();
 	}
 
-	void ConcreteClrClass::WriteStringToNative(String^ managedText) {
+	void ConcreteCliClass::WriteStringToNative(String^ managedText) {
 		native_classes::NativeClass nativeClass;
 
 		// See: https://msdn.microsoft.com/en-us/library/bb384865.aspx

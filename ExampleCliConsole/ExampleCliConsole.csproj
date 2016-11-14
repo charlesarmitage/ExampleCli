@@ -48,9 +48,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ExampleClr\ExampleClr.vcxproj">
+    <ProjectReference Include="..\ExampleCli\ExampleCli.vcxproj">
       <Project>{4692d893-b46d-4052-b368-b644c9835094}</Project>
-      <Name>ExampleClr</Name>
+      <Name>ExampleCli</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

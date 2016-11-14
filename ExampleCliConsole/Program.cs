@@ -1,13 +1,13 @@
 ﻿using System;
-using ExampleClr;
+using ExampleCli;
 
-namespace ExampleClrConsole
+namespace ExampleCliConsole
 {
     class Program
     {
         static void Main(string[] args)
         {
-            var clClass = new ConcreteClrClass();
+            var clClass = new ConcreteCliClass();
             Console.WriteLine(clClass.ReturningStrings() + "\n");
             Console.WriteLine(clClass.ReturningStringFromNativeCode() + "\n");
 
@@ -17,7 +17,7 @@ namespace ExampleClrConsole
             clClass.WriteStringToNative("Text from clr");
 
             Console.WriteLine("\nWrapped objects must be kept on the heap so use wrapped native objects in the same way as the pimpl idiom\n");
-            var wrapper = new ClrWrapper();
+            var wrapper = new CliWrapper();
             Console.WriteLine("Native count: " + wrapper.NativeCount());
             Console.WriteLine("Native count: " + wrapper.NativeCount());
             Console.WriteLine("Native count: " + wrapper.NativeCount());

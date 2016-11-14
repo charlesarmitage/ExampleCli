@@ -14,7 +14,8 @@
     <ProjectGuid>{4692D893-B46D-4052-B368-B644C9835094}</ProjectGuid>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <Keyword>ManagedCProj</Keyword>
-    <RootNamespace>ExampleClr</RootNamespace>
+    <RootNamespace>ExampleCli</RootNamespace>
+    <ProjectName>ExampleCli</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -76,16 +77,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="ClrWrapper.h" />
-    <ClInclude Include="ConcreteClrClass.h" />
+    <ClInclude Include="CliWrapper.h" />
+    <ClInclude Include="ConcreteCliClass.h" />
     <ClInclude Include="NativeClass.h" />
     <ClInclude Include="resource.h" />
     <ClInclude Include="Stdafx.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="AssemblyInfo.cpp" />
-    <ClCompile Include="ClrWrapper.cpp" />
-    <ClCompile Include="ConcreteClrClass.cpp" />
+    <ClCompile Include="CliWrapper.cpp" />
+    <ClCompile Include="ConcreteCliClass.cpp" />
     <ClCompile Include="NativeClass.cpp" />
     <ClCompile Include="Stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>

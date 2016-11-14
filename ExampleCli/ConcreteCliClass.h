@@ -1,14 +1,12 @@
-// ExampleClr.h
-
 #pragma once
 #include <msclr\marshal_cppstd.h>
 
 using namespace System;
 
-// A CLR file
-namespace ExampleClr {
+// A CLI file
+namespace ExampleCli {
 
-	public ref class ConcreteClrClass
+	public ref class ConcreteCliClass
 	{
 	public :
 		String^ ReturningStrings();
